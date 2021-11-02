@@ -1,0 +1,21 @@
+{% extends "masterpage.html" %}
+
+{% block header %}
+  <h1>sisdiconpra</h1>
+  <h2>Ola!</h2>
+{% endblock %}
+{% block content %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Opções para o operador</h3>
+        <ul>
+          <li><a href="{{ url_for('sisdiconpra.usuarios.index') }}">Home</a></li>
+          <li><a href="{{ url_for('sisdiconpra.usuarios.novo_usuario') }}">Novo Usuário</a></li>
+          <li><a href="{{ url_for('sisdiconpra.usuarios.listar_usuarios') }}">Listar Usuários</a></li>
+        </ul>
+          </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
