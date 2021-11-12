@@ -1,0 +1,25 @@
+{% extends "masterpage.html" %}
+
+{% block header %}
+    <h1>sisdiconpra</h1>
+    <h2>Novo Aluno.</h2>
+{% endblock %}
+
+
+{% block content %}
+  <div class="spinner-overlay" style="display: none;">
+    <div class="spinner"></div>
+  </div>
+  <form method="POST" id="novo-aluno" enctype="multipart/form-data">
+    <fieldset>
+      <label>Nome Completo
+        <input type="text" id="txtNomeCompleto" name="nome_completo" placeholder="" required>
+      </label>
+      <br />
+      <label>Foto
+        <input type="file" id="txtNomeCompleto" name="foto" placeholder="" required>
+      </label>
+    </fieldset>
+    <input type="submit" value="Cadastrar Aluno" />
+  </form>
+{% endblock %}

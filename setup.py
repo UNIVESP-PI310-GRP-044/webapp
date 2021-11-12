@@ -38,5 +38,7 @@ setup(
         "colander==1.3.2",
         "oauth2client==4.0.0",
         "requests==2.13.0",
+        "mysqlclient==2.0.3",
+        "pymysql==1.0.2"
     ],
 )
