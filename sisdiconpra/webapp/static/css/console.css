@@ -116,3 +116,15 @@ div.jsoneditor-field {
   font-size: .75rem;
   border: 0em;
 }
+
+div.photo_container{
+  width: 75px;
+  height:75px;
+  border:solid;
+}
+
+div.photo_container img{
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
