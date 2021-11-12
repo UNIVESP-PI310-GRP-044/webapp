@@ -16,4 +16,4 @@ Atente que `C:\Users\lamas\univesp\webapp\sisdiconpra\` precisa ser o mesmo cami
 
 Acesse http://127.0.0.1:5000/webapp/
 
-Essa versão ainda não está conectando no MySQL, estamos usando o SQLite como banco. Você vai notar que no diretório `sisdiconpra\webapp` vai ser criado um arquivo chamado db.sqlite. Mudar para o MySQL é uma questão de configuração, por enquanto vamos seguir assim para todo mundo entender o código que é mais próximo da arquitetura final.
+Essa versão agora conectando no MySQL. Certifique-se que você está com o container do MySQL rodando e que no banco tenha um schema chamado `pi`.
