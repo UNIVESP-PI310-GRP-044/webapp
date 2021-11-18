@@ -14,7 +14,9 @@ def create_app():
 
     app.config['SECRET_KEY'] = 'f3cfe9ed8fae309f02079dbf'
     app.config['FLASK_ENV'] = 'development'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:senha@localhost/pi'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+
+
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     
     @app.before_first_request
