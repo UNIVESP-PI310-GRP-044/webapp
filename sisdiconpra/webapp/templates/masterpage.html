@@ -2,6 +2,21 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="/sisdiconpra/webapp/templates/images/favicon.ico" type="image/x-icon">
+  <title>Sistema Digital para Controle de Presença de Alunos</title>
+  <link href="/sisdiconpra/webapp/static/css/reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="/sisdiconpra/webapp/static/css/style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
+    rel="stylesheet">
+</head>
+
+<!-- <head>
   <title>Sistema Digital para Controle de Presença de Alunos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -48,19 +63,39 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
     rel="stylesheet">
-</head>
+</head> -->
 
 <body>
 
   <div class="jumbotron">
-    {% block header %}
-    {% endblock %}
-    <a href="{{ url_for('sisdiconpra.usuarios.index') }}">Home</a>
+    <header>
+      <div class="primary_header">
+        <a href="{{ url_for('sisdiconpra.usuarios.index') }}"><img src="/images/home.png"></a>
+        <h1 class="title">E.E. Pereira Barreto</h1>
+      </div>
+      <div class="secondary_header">
+        <h2 class="title">Sistema Digital para Controle de Presença de Alunos</h2>
+      </div>
+    </header>
   </div>
-
 
   {% block content %}
   {% endblock %}
+
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2021 - <strong>SisDiConPrA</strong></div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
