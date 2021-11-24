@@ -13,7 +13,7 @@ setup(
     #   warning: check: missing meta-data: either (author and author_email) or (maintainer and maintainer_email) must be
     #   supplied
     author="Grupo PI Univesp",
-    author_email="xapo@xapo.com",
+    author_email="",
     url="http://www.univesp.br",
     packages=[
         'sisdiconpra',
@@ -32,11 +32,10 @@ setup(
 
     install_requires=[
         # 3rd Party
-        "Flask==0.11.1",
+        "Flask==1.1.2",
+        "Flask-SQLAlchemy==2.5.1",
         "MySQL-python==1.2.5",
         "SQLAlchemy==1.1.9",
-        "colander==1.3.2",
-        "oauth2client==4.0.0",
         "requests==2.13.0",
         "mysqlclient==2.0.3",
         "pymysql==1.0.2"

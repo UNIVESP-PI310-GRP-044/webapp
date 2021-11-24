@@ -24,24 +24,23 @@
       <thead>
         <tr>
             <th scope="col">Id</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Data</th>
-            <th scope="col">Hora</th>
+            <th scope="col">Data/Hora</th>
+            <th scope="col">Nome completo</th>
+            <th scope="col">Foto</th>
         </tr>
       </thead>
 
       <tbody>
-        {% for usuario in usuarios %}
-        <tr data-toggle="collapse" id="{{ usuario.id }}" data-target="#{{ usuario.id }}-details" class="console-row-event console-row-collapsed">
-          <td>{{ usuario.id }}</td>
-          <td>{{ usuario.name }}</td>
-          <td>{{ aluno.data }}</td> <!-- confirmar se existe esse registro no DB -->
-          <td>{{ aluno.hora }}</td> <!-- confirmar se existe esse registro no DB -->
-        </tr>
-        <tr class="console-row-child">
-          <td colspan="5">
-            <div id="{{ usuario.id }}-details" class="collapse"></div>
-          </td>
+        {% for ocorrencia in ocorrencias %}
+        <tr data-toggle="collapse" id="{{ ocorrencia.id }}" data-target="#{{ ocorrencia.id }}-details" class="console-row-event console-row-collapsed">
+          <td>{{ ocorrencia.id }}</td>
+          <td>{{ ocorrencia.data }}</td>
+          <td>{{ ocorrencia.aluno.nome_completo }}</td> <!-- confirmar se existe esse registro no DB -->
+          <td>
+            <div class="photo_container">
+              <img src="data:;base64,{{ocorrencia.aluno.foto }}" />
+            </div>
+            </td>
         </tr>
         {% endfor %}
       </tbody>

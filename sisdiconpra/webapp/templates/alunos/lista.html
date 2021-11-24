@@ -18,8 +18,6 @@
     <tr>
       <th scope="col">Id</th>
       <th scope="col">Nome</th>
-      <th scope="col">Data</th>
-      <th scope="col">Hora</th>
       <th scope="col">Foto</th>
     </tr>
   </thead>
@@ -31,20 +29,16 @@
       class="console-row-event console-row-collapsed">
       <td>{{ aluno.id }}</td>
       <td>{{ aluno.nome_completo }}</td>
-      <td>{{ aluno.data }}</td> <!-- confirmar se existe esse registro no DB -->
-      <td>{{ aluno.hora }}</td> <!-- confirmar se existe esse registro no DB -->
       <td>
         <div class="photo_container">
           <img src="data:;base64,{{ aluno.foto }}" />
         </div>
       </td>
-
-      <!--<td>
-            <div style="text-align: center;">
-              <button class="btn btn-sm btn-danger console-button-apagar-aluno" value="apagar">Apagar</button>
-            </div>
-          </td> -->
-
+      <td> 
+        <div style="text-align: center;">
+          <button class="btn btn-sm btn-danger console-button-apagar-aluno" value="apagar">Apagar</button>
+        </div>
+      </td>
     </tr>
     <tr class="console-row-child">
       <td colspan="5">
