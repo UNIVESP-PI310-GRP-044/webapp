@@ -8,7 +8,7 @@ from sisdiconpra.models.Ocorrencia import Ocorrencia
 from sisdiconpra.models.Aluno import Aluno
 import datetime
 
-name = "sisdiconpra.api.v1.ocorrencias"
+name = "sisdiconpra_api_v1_ocorrencias"
 api = flask.Blueprint(name, __name__)
 
 logger = logging.getLogger(name)
