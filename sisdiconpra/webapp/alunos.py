@@ -3,7 +3,7 @@ import flask
 from sisdiconpra.models.Aluno import Aluno
 from sisdiconpra.persistence import db
 
-name = "sisdiconpra.alunos"
+name = "sisdiconpra_alunos"
 api = flask.Blueprint(name, __name__, static_folder="static", template_folder="templates")
 
 
