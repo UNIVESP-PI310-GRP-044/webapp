@@ -6,7 +6,7 @@ from flask import current_app as app
 from sisdiconpra.persistence import db
 from sisdiconpra.models.Aluno import Aluno
 
-name = "sisdiconpra.api.v1.alunos"
+name = "sisdiconpra_api_v1_alunos"
 api = flask.Blueprint(name, __name__)
 
 logger = logging.getLogger(name)
