@@ -31,4 +31,4 @@ def processa_novo_alunos():
     db.session.add(aluno)
     db.session.commit()
     
-    return flask.redirect(flask.url_for('sisdiconpra.alunos.listar_alunos'))
+    return flask.redirect(flask.url_for('sisdiconpra_alunos.listar_alunos'))

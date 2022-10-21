@@ -29,4 +29,4 @@ def processa_novo_usuario():
     db.session.add(usuario)
     db.session.commit()
     
-    return flask.redirect(flask.url_for('sisdiconpra.usuarios.listar_usuarios'))
+    return flask.redirect(flask.url_for('sisdiconpra_usuarios.listar_usuarios'))
