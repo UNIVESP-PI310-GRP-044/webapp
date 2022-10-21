@@ -3,7 +3,7 @@ import flask
 from sisdiconpra.models.User import User
 from sisdiconpra.persistence import db
 
-name = "sisdiconpra.usuarios"
+name = "sisdiconpra_usuarios"
 api = flask.Blueprint(name, __name__, static_folder="static", template_folder="templates")
 
 
