@@ -4,7 +4,7 @@ from sisdiconpra.models.User import User
 from sisdiconpra.models.Ocorrencia import Ocorrencia
 from sisdiconpra.persistence import db
 
-name = "sisdiconpra.ocorrencias"
+name = "sisdiconpra_ocorrencias"
 api = flask.Blueprint(name, __name__, static_folder="static", template_folder="templates")
 
 
