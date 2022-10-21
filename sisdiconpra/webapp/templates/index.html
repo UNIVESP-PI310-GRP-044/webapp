@@ -10,12 +10,12 @@
       praticidade.</p>
     <p>Utilize o menu abaixo para consultar os registros de Presença</p>
     <div class="menu-consulta">
-      <a class="btn btn-primary" href="{{ url_for('sisdiconpra.ocorrencias.listar_ocorrencias') }}" role="button">Listar Registros de Presença</a>
+      <a class="btn btn-primary" href="{{ url_for('sisdiconpra_ocorrencias.listar_ocorrencias') }}" role="button">Listar Registros de Presença</a>
     </div>
     <p>Utilize o menu abaixo para manutenção dos dados de Alunos</p>
     <div class="menu-consulta">
-      <a class="btn btn-primary" href="{{ url_for('sisdiconpra.alunos.listar_alunos') }}" role="button">Listar Alunos</a>
-      <a class="btn btn-primary" href="{{ url_for('sisdiconpra.alunos.novo_aluno') }}" role="button">Cadastrar novo Aluno</a>
+      <a class="btn btn-primary" href="{{ url_for('sisdiconpra_alunos.listar_alunos') }}" role="button">Listar Alunos</a>
+      <a class="btn btn-primary" href="{{ url_for('sisdiconpra_alunos.novo_aluno') }}" role="button">Cadastrar novo Aluno</a>
     </div>
   </article>
   <aside class="right_article"><img src="/static/images/sala-de-aula.jpg" alt="Professor e alunos em uma sala de aula"
@@ -28,14 +28,14 @@
     <div class="col-md-4">
       <h3>Opções para o operador</h3>
       <ul>
-        <li><a href="{{ url_for('sisdiconpra.usuarios.index') }}">Home</a></li>
-        <li><a href="{{ url_for('sisdiconpra.usuarios.novo_usuario') }}">Novo Usuário</a></li>
-        <li><a href="{{ url_for('sisdiconpra.usuarios.listar_usuarios') }}">Listar Usuários</a></li>
+        <li><a href="{{ url_for('sisdiconpra_usuarios.index') }}">Home</a></li>
+        <li><a href="{{ url_for('sisdiconpra_usuarios.novo_usuario') }}">Novo Usuário</a></li>
+        <li><a href="{{ url_for('sisdiconpra_usuarios.listar_usuarios') }}">Listar Usuários</a></li>
 
-        <li><a href="{{ url_for('sisdiconpra.alunos.novo_aluno') }}">Novo Aluno</a></li>
-        <li><a href="{{ url_for('sisdiconpra.alunos.listar_alunos') }}">Listar Alunos</a></li>
+        <li><a href="{{ url_for('sisdiconpra_alunos.novo_aluno') }}">Novo Aluno</a></li>
+        <li><a href="{{ url_for('sisdiconpra_alunos.listar_alunos') }}">Listar Alunos</a></li>
 
-        <li><a href="{{ url_for('sisdiconpra.ocorrencias.listar_ocorrencias') }}">Listar Ocorrencias</a></li>
+        <li><a href="{{ url_for('sisdiconpra_ocorrencias.listar_ocorrencias') }}">Listar Ocorrencias</a></li>
       </ul>
     </div>
   </div>
